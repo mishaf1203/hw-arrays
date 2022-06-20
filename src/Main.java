@@ -22,6 +22,7 @@ public class Main {
         System.out.println( aArray[1]);
         System.out.println( aArray[2]);
 
+
         //Задание 2
 
 
