@@ -19,8 +19,8 @@ public class Main {
 //1.3
         double [] aArray = {10.2, 1.42, 15.0};
         System.out.println( aArray[0]);
-        System.out.println( aArray[0]);
-        System.out.println( aArray[0]);
+        System.out.println( aArray[1]);
+        System.out.println( aArray[2]);
 
         //Задание 2
 
