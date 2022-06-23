@@ -15,7 +15,7 @@ public class Main {
 //        System.out.println(example[1]);
 //        System.out.println(example[2]);
 //1.2
-        double[] realNum = {1.57, 7.654, 9,986 };
+        double[] realNum = {1.57, 7.654, 9,0 };
         System.out.println(realNum[0] + ", " + realNum[1]+ ", " + realNum[2]);
 //1.3
         double [] aArray = {10.2, 1.42, 15.0};
@@ -33,10 +33,42 @@ public class Main {
 //        for (int i : a){
 //            System.out.println(exampleString);
 //        }
-//        System.out.println(example);
-//        for (int i = example.length - 1; i >= 0; i--) {
-//            System.out.print();
-//        }
+        //        System.out.println(example);
+        for (int i = 3 - 1; i >= 0; i--) {
+            System.out.print(example[i]);
+            System.out.print(", ");
+        }
+        System.out.println(" ");
+
+        for (int i = 3 - 1; i >= 0; i--) {
+            System.out.print(realNum[i]);
+            System.out.print(", ");
+        }
+        System.out.println(" ");
+
+        for (int i = 3 - 1; i >= 0; i--) {
+            System.out.print(aArray[i]);
+            System.out.print(", ");
+        }
+        System.out.println("");
+
+//            for (int  i = 0; i < example.length;i++) {
+//                if (example[0] % 1) == 0) {
+//                    System.out.println(example[0]+ 1);
+//                }
+//            }
+        System.out.println("Преобразованные нечетные в четные числа");
+        int i = 0;
+        for(int x=0;x<example.length;x++)
+        {
+            if(example[x]%2-1==0){
+                i = example[x];
+                System.out.println(i + 1);
+            }
+        }
+
+
+
 
 
 
