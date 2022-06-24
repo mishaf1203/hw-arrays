@@ -11,9 +11,7 @@ public class Main {
         example[2] = 3;
 
         System.out.println(example[0]+ ", "+ example[1]+", " +example[2]);
-//        System.out.println(example[0]);
-//        System.out.println(example[1]);
-//        System.out.println(example[2]);
+
 //1.2
         double[] realNum = {1.57, 7.654, 9,0 };
         System.out.println(realNum[0] + ", " + realNum[1]+ ", " + realNum[2]);
@@ -21,19 +19,10 @@ public class Main {
         double [] aArray = {10.2, 1.42, 15.0};
 
         System.out.println(aArray[0] + ", " +aArray[1] + ", " +aArray[2] );
-//        System.out.println( aArray[0]);
-//        System.out.println( aArray[1]);
-//        System.out.println( aArray[2]);
+
 
         //Задание 3
-//        for (int i = exampleString; i > 0; i--){
-//
-//        }
-//        String example = "";
-//        for (int i : a){
-//            System.out.println(exampleString);
-//        }
-        //        System.out.println(example);
+
         for (int i = 3 - 1; i >= 0; i--) {
             System.out.print(example[i]);
             System.out.print(", ");
@@ -66,6 +55,8 @@ public class Main {
                 System.out.println(i + 1);
             }
         }
+        //   int[] arr = generateRandomArray();
+
 
 
 
