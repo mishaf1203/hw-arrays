@@ -20,6 +20,7 @@ public class Main {
 
 //1.2
         double[] realNum = {1.57, 7.654, 9,0};
+
         for (int i = 0; i < realNum.length-1; i++) {
             if (i == realNum.length ) {
                 System.out.println(realNum[i]);
@@ -61,13 +62,22 @@ public class Main {
         System.out.println("");
 
 
-        System.out.println("Преобразованные нечетные в четные числа");
+        System.out.println("Преобразованные нечетные числа из");
+        for (int i = 0; i < example.length; i++) {
+            if (i == example.length - 1) {
+                System.out.println(example[i]);
+                break;
+            }
+            System.out.print(example[i] + ", ");
+        }
+        System.out.println("В четные:");
         int i = 0;
         for(int x=0;x<example.length;x++)
         {
-            if(example[x]%2-1==0){
+            if(example[x]%2==1){
                 i = example[x];
                 System.out.println(i + 1);
+
             }
         }
 
