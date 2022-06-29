@@ -11,74 +11,71 @@ public class Main {
         example[2] = 3;
 
         for (int i = 0; i < example.length; i++) {
-            if (i == example.length - 1) {
-                System.out.println(example[i]);
-                break;
-            }
-            System.out.print(example[i] + ", ");
+            if (i < example.length - 1) {
+                System.out.print(example[i] + ", ");
+            } else
+                System.out.print(example[i]);
         }
-
+        System.out.println();
 //1.2
-        double[] realNum = {1.57, 7.654, 9,0};
+        double[] realNum = {1.57, 7.654, 9,986};
 
-        for (int i = 0; i < realNum.length-1; i++) {
-            if (i == realNum.length ) {
-                System.out.println(realNum[i]);
-                break;
-            }
-            System.out.print(realNum[i] + ", ");
+        for (int i = 0; i < realNum.length; i++) {
+            if (i < realNum.length - 1) {
+                System.out.print(realNum[i] + ", ");
+            } else
+                System.out.print(realNum[i]);
         }
-        System.out.println(" ");
+        System.out.println();
 //1.3
         double [] aArray = {10.2, 1.42, 15.0};
 
-        for (int i= 0; i < aArray.length; i++) {
-            if (i == aArray.length - 1) {
-                System.out.println(aArray[i]);
-                break;
-            }
-            System.out.print(aArray[i] + ", ");
+        for (int i = 0; i < aArray.length; i++) {
+            if (i < aArray.length - 1) {
+                System.out.print(aArray[i] + ", ");
+            } else
+                System.out.print(aArray[i]);
         }
-
-
+        System.out.println();
         //Задание 3
 
         for (int i = example.length-1; i >= 0; i--) {
-            System.out.print(example[i]);
-            System.out.print(", ");
+            if (i > 0) {
+                System.out.print(example[i] + ", ");
+            } else
+                System.out.print(example[i]);
         }
-        System.out.println(" ");
+        System.out.println();
 
-        for (int i = 3 - 1; i >= 0; i--) {
-            System.out.print(realNum[i]);
-            System.out.print(", ");
+
+
+        for (int i = realNum.length-1; i >= 0; i--) {
+            if (i >0) {
+                System.out.print(realNum[i] + ", ");
+            } else
+                System.out.print(realNum[i]);
         }
-        System.out.println(" ");
+        System.out.println();
 
-        for (int i = 3 - 1; i >= 0; i--) {
-            System.out.print(aArray[i]);
-            System.out.print(", ");
+        for (int i = aArray.length - 1; i >= 0; i--) {
+            if (i > 0) {
+                System.out.print(aArray[i]);
+                System.out.print(", ");
+            } else
+                System.out.println(realNum[i]);
         }
-        System.out.println("");
 
 
-        System.out.println("Преобразованные нечетные числа из");
+//Задание 4
         for (int i = 0; i < example.length; i++) {
-            if (i == example.length - 1) {
-                System.out.println(example[i]);
-                break;
+            if (example[i]%2==1) {
+                example[i]++;
             }
-            System.out.print(example[i] + ", ");
-        }
-        System.out.println("В четные:");
-        int i = 0;
-        for(int x=0;x<example.length;x++)
-        {
-            if(example[x]%2==1){
-                i = example[x];
-                System.out.println(i + 1);
+            if (i<example.length-1){
+                System.out.print(example[i]+ ", ");
+            }else
+                System.out.print(example[i]);
 
-            }
         }
 
     }
